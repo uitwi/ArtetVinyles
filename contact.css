@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    top: ;
+    box-sizing: border-box;
+    border: none;
+    
+}
+
+.baudy {
+    /*background: linear-gradient(#fff,#fff6e0, #d8d9da, #61677a, #111);*/
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100vh;
+    position: relative;
+    background: no-repeat;
+}
+
+.header {
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left: 12%;
+    top: 2rem;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.empty {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0; left: 0;
+    z-index:  -1;
+}
+
+.cantent {
+    display: flex;
+    min-height: 110vh;
+    background: beige;
+}
+
+.content-morf {
+    background: beige;
+    display: block;
+    border-radius: 20px;
+}
+
+.txt {
+    color: #00000047;
+}
+
+.detaillant {
+    color: #00000047;
+}
+
+.cantent section {
+    margin-top: 8vh;
+    margin-left: 20vh;
+}
+
+.cantent .farm {
+    margin-top: 7rem;
+}
+
+section img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .8);
+    color: #000;
+    text-align: center;
+}
+
+.farm {
+    display: flex;
+    position: absolute;
+    top: 0; left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.farm .contact-form input {
+    width: 30rem;
+    background-color: transparent;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    color: #00000047;
+}
+
+.detaillant {
+
+}
+
+.farm .contact-form input ~ span {
+    position: absolute;
+    left: 20px;
+    transition: .9s ease-in-out;
+    margin-top: 10px;
+}
+
+.farm .contact-form input:focus {
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.farm .contact-form textarea {
+    width: 30rem;
+    border: 0;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid #fff;
+}
+
+.farm .contact-form textarea ~ span {
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: .9s ease-in-out;
+}
+
+.farm .contact-form textarea:focus ~ span {
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.form .contact-form input[type=submit] {
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    font-size: 18px;
+    width: 50%;
+    margin-top: -5px;
+}
+
+
+.contact-form .submit:hover {
+    transform: translateY(-3px);
+    transition: ease-in-out 0.4s;
+    border-right: 1px solid white;
+}
+
+.media {
+    position: absolute;
+    top: 85vh;
+    right: 20vh;
+    display: flex;
+    list-style: none;
+}
+
+.media li {
+    margin: 20px 30px;
+}
+
+@media(max-width: 900px) {
+    body {
+        background-repeat: repeat-y;
+        overflow: auto;
+        background-color: beige;
+    }
+
+    #f-contact {
+        background-color: beige;
+    }
+
+    .header {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 100%;
+    }
+    .empty {
+        height: 200vh;
+    }
+    .farm {
+        position: absolute;
+        top: 100vh;
+        margin-left: 10%;
+    }
+    .content-morf {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        margin-top: 53vh;
+        margin-left: 10vh;
+    }
+    .cantent section {
+        margin-top: 0;
+        margin: 0; 
+        padding: 20px;
+    }
+    .media {
+        position: absolute;
+        top: 183vh;
+        right: 30px;
+        text-align: center;
+    }
+}

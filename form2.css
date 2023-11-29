@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+details {
+    margin: 18px;
+    color: rgba(255, 255, 255, 0.489);
+    padding-bottom: 20px;
+    
+    text-align: center;
+}
+
+details summary {
+    font-size: 1.3rem;
+    padding: 20px;
+    color: turquoise;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+@keyframes sildeInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+transform: translateX(0);
+    }
+}
+details summary:hover {
+    color: white;
+    border-top: 2px solid turquoise;
+    animation-name: sildeInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.text-faq {
+    color: rgba(255, 255, 255, 0.447);
+}
+
+i {
+    font-size: 0.8rem;
+}
+
+@media(max-width: 920px) {
+    details summary {
+        font-size: 1.3rem;
+        padding: 20px;
+        color: turquoise;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 60px;
+    }
+}

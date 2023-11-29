@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.barnav {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin-top: 4%;
+    z-index: 999;
+    background-color: #070606b9;
+}
+
+.barnav img {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.barnav .golo h1 {
+    color: white;
+    cursor: pointer;
+}
+
+.barnav .nume li {
+    list-style: none;
+    display: inline-block;
+}
+
+.barnav .nume li a {
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.barnav .nume li .active {
+    border-bottom: 4px solid #f63e4e;
+}
+
+.barnav .nume li a:hover {
+    border-bottom: 4px solid #f63e4e;
+}
+
+.tentcon {
+    background-image: url(../img/bg-pagequestions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 100vh;
+}
+
+.tentcon h1 {
+    font-size: 40px;
+}
+
+.tentcon p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.tentcon button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #f63e4e;
+    color: rgba(255, 255, 255, 0.829);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tentcon #decou:hover {
+    background-color: #f63e4de4;
+    color: white;
+    transition: ease-in-out 0.4s;
+}
+
+.duitpros-texte {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color: #424144;
+}
+
+.duipros-section {
+    padding: 40px 5%;
+}
+
+.duitpros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.duitpros .carte {
+    width: 310px;
+    background: #F5F5F5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+.duitpros .carte:hover {
+    transform: translateY(-5px);
+    transition: ease 0.3s;
+}
+
+
+.duitpros .carte img {
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.duitpros .carte .desc {
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.duitpros .carte .titre {
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.duitpros .carte .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.duitpros .carte .prix {
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.duitpros .carte .achat {
+    font: 13px;
+    font-weight: 900;
+    color: #f63e4e;
+    padding: 10px 18px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.duitpros .carte .achat:hover {
+    cursor: pointer;
+    background: #000;
+    color: white;
+    transform: translateY(-3px);
+    transition: ease-in-out 0.4s;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 1030px) {
+    .barnav {
+        margin-top: 12%;
+    }
+}
+
+@media(max-width: 825px) {
+    .barnav {
+        margin-top: 8%;
+    }
+    .duitpros {
+        display: block;
+    }
+}
+
+@media(max-width: 495px) {
+    .barnav {
+        margin-top: 14%;
+    }
+    .duitpros {
+        display: block;
+    }
+}
+
+@media(max-width: 300px) {
+    .barnav .nume {
+        list-style: none;
+        display: inline-block;
+        
+    }
+}
